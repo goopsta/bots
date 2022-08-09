@@ -10,7 +10,7 @@ end
 wait(3)
 spawn(function()
     if role == "follower" then
-	print("Hello World!")
+	loadstring(getgenv().script)
     end
 end)
 
