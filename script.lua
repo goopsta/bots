@@ -7,13 +7,6 @@ else
     role = "host"
 end
 
-wait(3)
-spawn(function()
-    if role == "follower" then
-	loadstring(getgenv().script)
-    end
-end)
-
 
 
 
@@ -209,7 +202,11 @@ if role == "follower" then
     end)
 end
 
-
+spawn(function()
+    if role == "follower" then
+	loadstring(getgenv().script)
+    end
+end)
 
 
 -- follower end
